@@ -1,8 +1,10 @@
 {
-  "routes": [
+  "buildCommand": "cd entre-pathfinder-0029cf7b-main && npm run build",
+  "outputDirectory": "entre-pathfinder-0029cf7b-main/dist",
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
