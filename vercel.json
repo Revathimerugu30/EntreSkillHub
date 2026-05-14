@@ -1,6 +1,15 @@
 {
   "buildCommand": "cd entre-pathfinder-0029cf7b-main && npm run build",
-  "outputDirectory": "entre-pathfinder-0029cf7b-main/dist",
+  "outputDirectory": "entre-pathfinder-0029cf7b-main/dist/client",
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "functions": {
+    "entre-pathfinder-0029cf7b-main/dist/server/**": {
+      "maxDuration": 60,
+      "memory": 1024
+    }
+  },
   "rewrites": [
     {
       "source": "/(.*)",
